@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/2024-01-CSC4004-03-StillStrong.iml" filepath="$PROJECT_DIR$/.idea/2024-01-CSC4004-03-StillStrong.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/still88.backend.main.iml" filepath="$PROJECT_DIR$/.idea/modules/still88.backend.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend.main.iml" filepath="$PROJECT_DIR$/.idea/modules/backend.main.iml" />
     </modules>
   </component>
 </project>

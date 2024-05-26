@@ -16,20 +16,23 @@ public class Recipe {
     @Column(nullable = false)
     private String recipeName;
 
-    @Column
+    @Column(nullable = false)
     private String recipeCategory;
 
     // JSON 타입으로 지정
-    @Column(columnDefinition = "json")
+    @Column(columnDefinition = "json", nullable = false)
     private String recipeDescription;
 
     // JSON 타입으로 지정
-    @Column(columnDefinition = "json")
+    @Column(columnDefinition = "json", nullable = false)
     private String recipeImage;
 
-    // JSON 타입으로 지정
-    @Column(columnDefinition = "json")
+    // TEXT 타입으로 지정
+    @Column(columnDefinition = "text", nullable = false)
     private String recipeIngredient;
+
+    @Column(nullable = false)
+    private int likeNum;
 
     // 생성자 + Builder로 일관성 유지
     @Builder
@@ -40,5 +43,6 @@ public class Recipe {
         this.recipeDescription = recipeDescription;
         this.recipeImage = recipeImage;
         this.recipeIngredient = recipeIngredient;
+        this.likeNum = likeNum;
     }
 }

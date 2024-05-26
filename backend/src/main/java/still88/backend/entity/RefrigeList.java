@@ -28,19 +28,9 @@ public class RefrigeList {
     @OneToMany(mappedBy = "refrigeList")
     private List<ShareRefrige> shareRefriges = new ArrayList<>();
 
-    // 연관 관계 매핑
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="userId", nullable = false)
-    private User user;
-
+    // 생성자 + Builder로 일관성 유지
     @Builder
-    public RefrigeList(String refrigeName, User user) {
-        this.refrigeName = refrigeName;
-        this.user = user;
-    }
-
-    // 수정 메서드
-    public void updateRefrigeName(String refrigeName) {
+    public RefrigeList(String refrigeName) {
         this.refrigeName = refrigeName;
     }
 }
